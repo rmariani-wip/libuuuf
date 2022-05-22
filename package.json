@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:wipitalia/uuuf.git"
+    "url": "git@github.com:wipitalia/libuuuf.git"
   },
   "author": "rmariani@wipitalia.it",
   "license": "MIT",
