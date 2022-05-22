@@ -2,7 +2,7 @@
   "name": "libuuuf",
   "version": "0.0.1",
   "description": "Undoubtedly Useful Utility Functions",
-  "main": "uuuf.js",
+  "main": "libuuuf.js",
   "directories": {
     "example": "examples"
   },
