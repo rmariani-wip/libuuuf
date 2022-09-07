@@ -197,7 +197,7 @@ const attach = (elem, componentInstance, fieldName = 'component') => {
  * without descending further into matches.
  * @param {Element} root element to start traversal
  * @param {(PredicateFn|string)} predicate predicate function or css selector string
- * @returns {Element[]} Array of matched elements
+ * @returns {Element} Array of matched elements
  */
 const query = (root, predicate) => {
     let p;
@@ -382,10 +382,8 @@ const bind = (elemMap, handlerMap) => {
  * @param {Tree.<Object.<string, EventCallbackRemover>} handlerMap
  */
 const unbind = handlerMap => {
-    walkTree(handlerMap, evtDef => {
-        Object.values(evtDef).forEach(handler => {
-            handler.remove();
-        });
+    walkTree(handlerMap, handler => {
+        handler.remove();
     });
 }
 
